@@ -1,0 +1,10 @@
+<item>
+    <title>[[+title:cdata]]</title>
+    <link>[[+url]]</link>
+    <description>[[+content:cdata]]</description>
+    <author>[[+author_username:cdata]]</author>
+    <category>[[+board_name:cdata]]</category>
+    <comments>[[+url]]</comments>
+    <pubDate>[[+createdon]]</pubDate>
+    <guid>[[+url]]</guid>
+</item>

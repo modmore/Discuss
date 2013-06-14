@@ -1,0 +1,1 @@
+<li><a title="[[%discuss.page_go_to]] [[+text]]" href="[[+url]]">[[+text]]</a></li>
