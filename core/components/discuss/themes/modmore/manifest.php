@@ -40,17 +40,10 @@ $manifest = array(
             'showPrintOption' => false,
         )
     ),
-    'print' => array(
-        'css' => array(
-            'header' => array(
-                'print.css',
-            ),
-        ),
-    ),
     'home' => array(
         'options' => array(
             'showBoards' => true,
-            'showRecentPosts' => false,
+            'showRecentPosts' => true,
             'showStatistics' => true,
             'showLoginForm' => false,
             'bypassUnreadCheck' => true,
@@ -58,6 +51,7 @@ $manifest = array(
             'showLogoutActionButton' => false,
             'hideIndexBreadcrumbs' => false,
             'subBoardSeparator' => '',
+            'showBreadcrumbs' => false,
         ),
     ),
     'board' => array(
@@ -91,15 +85,6 @@ $manifest = array(
             'showLockOption' => true,
             'showMarkAsSpamOption' => true,
         ),
-        'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_talking' => '1',
-                    'show_be_nice_box' => '1',
-                )
-            )
-        ),
     ),
     'thread/new' => array(
         'js' => array(
@@ -111,12 +96,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'replyform',
                 'options' => array(
@@ -137,12 +116,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'replyform',
                 'options' => array(
@@ -163,13 +136,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                    'show_talking' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'replyform',
                 'options' => array(
@@ -447,14 +413,6 @@ $manifest = array(
     ),
     'thread/recent' => array(
         'options' => array(
-        ),
-        'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            )
         ),
     ),
     'thread/unread' => array(

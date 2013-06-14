@@ -1,16 +1,16 @@
-<!-- home.tpl -->
 [[+top]]
 [[+aboveBoards]]
-	[[+pagination]]
-	<div class="dis-threads f-all h-group">
-		<div class="dis-threads forum-grid category panel-stack">
-			[[+boards]]
-		</div><!-- /dis-threads -->
-		[[+belowBoards]]
-		[[+aboveRecent]]
-	</div><!--/dis-threads f-all-->
-	<!-- below recent--> [[+belowRecent]]<!-- /below recent-->
-	<!-- pag-->[[+pagination]] <!-- /pag recent-->
-	<!-- thread actions -->[[+threadactionbuttons]]<!-- /thread actions -->
-	<!-- bottom actions -->[[+bottom]]<!-- /bottom actions -->
-<!-- / home.tpl -->
+
+
+<h1>mod<b>more</b> Support Forums</h1>
+<p class="lead">The mod<b>more</b> Support Forums is a place for users and fans of mod<b>more</b> to gather and help each other solve problems and talk about web stuff. It's also a great place for the mod<b>more</b> team to talk to our clients, so don't be surprised if we ask you what we should do next!</p>
+
+[[+boards]]
+
+[[+belowBoards]]
+[[+aboveRecent]]
+
+[[+belowRecent]]
+[[+pagination]]
+[[+threadactionbuttons]]
+[[+bottom]]

@@ -1,4 +1,17 @@
-<div class="row l-table h-group dis-category-[[+category]] [[+class]] [[+locked:is=`1`:then=`locked`:else=`unlocked`]] [[+unreadCls]]">
+<h3 class="noMargin">
+    [[+sticky:eq=`1`:then=`<span class="sticky tag">[[%discuss.sticky]]</span>`:else=``]]
+    [[+locked:eq=`1`:then=`<span class="locked tag">[[%discuss.board_locked]]</span>`:else=``]]
+    [[+answered:eq=`1`:then=`<span class="answered tag">[[%discuss.solved]]</span>`:else=``]]
+
+    <a href="[[+url]]">
+        [[+title]]
+        <small>[[+views]] views, [[+replies]] replies &bull; Last reply [[+createdon:ago]] by [[+last_post_username]]
+        </small>
+    </a>
+</h3>
+
+
+[[-<div class="row l-table h-group dis-category-[[+category]] [[+class]] [[+locked:is=`1`:then=`locked`:else=`unlocked`]] [[+unreadCls]]">
    <a class="h-group" href="[[+url]]">
         <div class="f1-f7 l-vmiddle m-title">
             <div class="wrap">
@@ -19,3 +32,4 @@
         </div>
     </a>
 </div>
+]]

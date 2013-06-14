@@ -1,10 +1,11 @@
-<div class="m-breadcrumbs f-padinfull l-horizontal_nav h-group">
-    <nav class="container l-left">
-		<ul>
-			[[+items]]
-			<li class="end">&nbsp;</li>
-		</ul>
-	</nav>
+<div class="forums-breadcrumbs">
+    <ul>
+        [[+items]]
+    </ul>
+</div>
+
+
+    [[-
 	<!-- remove out of breadcrumbs eventually-->
 	<div class="l-right m-search">
 		<div class="m-search-label l-inline">
@@ -20,4 +21,4 @@
 	    </form>
 	</div>
     <!-- / remove out of breadcrumbs-->
-</div>
+    ]]

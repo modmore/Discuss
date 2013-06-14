@@ -1,4 +1,19 @@
-<div class="Depth2 row dis-category h-group dis-category-[[+category]] [[+unread-cls]]">
+<div class="row forum-board" id="forum-[[+id]]" class="category-[[+category]] [[+unread-cls]]">
+    <div class="large-8 columns">
+        <h4 class="noMargin"><a href="[[+url]]">[[+name]] <small>[[+num_topics]] threads, [[+num_replies]] replies</small></a></h4>
+        <p>[[+description]]</p>
+
+        [[+subforums:notempty=`
+            [[+subforums]]
+        `]]
+    </div>
+    <div class="large-4 columns">
+        <a href="[[+last_post_url]]">[[+last_post_title]]</a>, [[+last_post_createdon:ago]]
+    </div>
+</div>
+
+
+[[-<div class="Depth2 row dis-category h-group dis-category-[[+category]] [[+unread-cls]]">
     <a href="[[+url]]" class="h-group">
         <div class="f1-f7">
             <div class="wrap">
@@ -17,3 +32,4 @@
     </a>
     [[+subforums:notempty=`<div class="h-group f-all"><p class="dis-board-subs [[+unread-cls]]">[[+subforums]]</p></div>`]]
 </div>
+]]
