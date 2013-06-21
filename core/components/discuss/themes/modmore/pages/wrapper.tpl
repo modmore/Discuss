@@ -44,23 +44,35 @@
 		<link rel="stylesheet" href="[[++modmore.assets]]css/combined.css">
         <style type="text/css">
             .forums-breadcrumbs {
-                float: right;
+
             }
             .forums-breadcrumbs ul {
                 padding: 0;
-                margin: 0;
+                margin: 0 !important;
             }
             .forums-breadcrumbs li {
-                float: left;
+                display: inline;
                 list-style-type: none;
-                padding-left: 20px;
+                padding-right: 0;
+                font-size: 80%;
+                color: #6f6f6f;
+            }
+            .forums-breadcrumbs li:after {
+                content: " /"
+            }
+            .forums-breadcrumbs li.last:after {
+                content: ""
             }
             #content img {
                 display: inline;
             }
-
-            .reply-to-post {
-
+            .forum-board h4 {
+                margin: 0 !important;
+            }
+            .forum-board p.meta {
+                font-size: 80%;
+                color: #6f6f6f;
+                margin-bottom: 0 !important;
             }
         </style>
 
@@ -108,7 +120,6 @@
             </div>
 
             <div role="main" class="large-9 columns">
-                [[+trail]]
                 [[+content]]
 
                 [[+threadactionbuttons:notempty=`
@@ -120,52 +131,3 @@
     </div>
 
 [[$template.footer]]
-
-[[-
-
-    <!-- / NEW mastehad 2012 -->
-    <div class="wrapper l-center f-padinfull h-group">
-        [[+content]]
-    </div>
-
-<!-- move all this to tplOmega-2012 eventually -->
-    <footer class="h-group">
-        <!-- forum stats -->
-        <div class="f-padinfull">
-            <div class="footer-stats h-group">
-                <div class="f1">
-                    <strong class="m-stats-title">[[%discuss.stats]]</strong>
-                </div>
-                <div class="f2-f3 m-stats">
-                    <strong class="m-stats-title">Total:</strong>
-                    <ul>
-                        <li>[[%discuss.posts]]: <span>[[+totalPosts]]</span></li>
-                        <li>[[%discuss.threads]]: <span>[[+totalTopics]]</span></li>
-                        <li>[[%discuss.members]]: <span>[[+totalMembers]]</span></li>
-                    </ul>
-                </div>
-                <div class="f4-f5 m-stats">
-                    <strong class="m-stats-title">Online:</strong>
-                    <ul>
-                        <li>Visitors: <span>[[+totalVisitorsActive]]</span></li>
-                        <li>Members: <span>[[+totalMembersActive]]</span></li>
-                    </ul>
-                </div>
-                <div class="f6-f7 m-stats">
-                    <strong class="m-stats-title">Today:</strong>
-                    <ul>
-                        <li>Visitors: <span>[[+activity.visitors]]</span></li>
-                        <li>[[%discuss.threads]]: <span>[[+activity.topics]]</span></li>
-                        <li>[[%discuss.replies]]: <span>[[+activity.replies]]</span></li>
-                    </ul>
-                </div>
-                <div class="f8-f12 m-stats-live">
-                    <div class="m-stats-group">
-                        <strong class="m-stats-title">[[%discuss.users_active? &total=`[[+activeUsers.total]]`]]:</strong>
-                        <span class="m-stats-single">[[+activeUsers.users]]</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- forum stats -->
-]]

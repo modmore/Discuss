@@ -2,6 +2,7 @@
 [[+aboveBoards]]
 
 <h1>[[+name]] <small class="right">[[+actionbuttons]]</small></h1>
+[[+trail]]
 <p>[[+description]]</p>
 
 
