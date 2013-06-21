@@ -4,9 +4,8 @@
   &validate=`title:required,message:required:allowTags`
 ]]
 
-<h1>[[%discuss.post_[[+action]]? &namespace=`discuss` &topic=`post`]]</h1>
-[[!+fi.error.test]]
-<form action="[[~[[*id]]]]thread/[[+action]]?[[+actionvar]]=[[+id]]" method="post" class="dis-form dis-thread-form" id="dis-post-form" enctype="multipart/form-data">
+<h1>Reply to [[+title]]</h1>
+<form action="[[~[[*id]]]]thread/[[+action]]?[[+actionvar]]=[[+id]]" method="post" class="dis-form dis-thread-form" id="dis-post-form" enctype="multipart/form-data" onsubmit="preventDoubleSubmissions(this)">
     <input type="hidden" name="board"  value="[[!+fi.board]]" />
     <input type="hidden" name="thread" value="[[!+fi.thread]]" />
     <input type="hidden" name="post"   value="[[!+fi.post]]" />

@@ -27,18 +27,20 @@
 $manifest = array(
     'preview' => 'preview.png',
     'global' => array(
-        'js' => array(
-            'inline' => 'var DIS = {config: {}}; DIS.url = "'.$this->discuss->request->makeUrl().'";DIS.shJsUrl = "'.$this->discuss->config['jsUrl'].'sh/";DIS.config.connector = "'.$this->discuss->config['connectorUrl'].'"; DIS.config.forum_url = "'.$this->discuss->request->makeUrl().'"',
-        ),
         'options' => array(
-            'registerJsToScriptTags' => false,
+            'registerJsToScriptTags' => true,
             'showBreadcrumbs' => true,
             'showTitleInBreadcrumbs' => true,
             'showReaders' => true,
             'showModerators' => true,
             'showPaginationIfOnePage' => false,
             'showPrintOption' => false,
-        )
+        ),
+        'css' => array(
+            'header' => array(
+                'forums.css',
+            ),
+        ),
     ),
     'home' => array(
         'options' => array(
@@ -73,8 +75,8 @@ $manifest = array(
     'thread' => array(
         'js' => array(
             'footer' => array(
-                'dis.thread.js',
-            )
+                'editor.js',
+            ),
         ),
         'options' => array(
             'showPosts' => true,
@@ -89,7 +91,7 @@ $manifest = array(
     'thread/new' => array(
         'js' => array(
             'footer' => array(
-                'dis.thread.js',
+                'editor.js',
             ),
         ),
         'options' => array(
@@ -109,7 +111,7 @@ $manifest = array(
     'thread/reply' => array(
         'js' => array(
             'footer' => array(
-                'dis.thread.js',
+                'editor.js',
             ),
         ),
         'options' => array(
@@ -127,11 +129,6 @@ $manifest = array(
         ),
     ),
     'thread/modify' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            ),
-        ),
         'options' => array(
             'pageTpl' => 'common/thread-with-form',
         ),
@@ -147,56 +144,26 @@ $manifest = array(
         ),
     ),
     'thread/move' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
         ),
     ),
     'thread/spam' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
         ),
     ),
     'thread/remove' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
         ),
     ),
     'post/report' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
         ),
     ),
     'post/spam' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
         ),
     ),
     'search' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.search.js',
-            ),
-        ),
     ),
     'user' => array(
         'options' => array(
@@ -211,11 +178,6 @@ $manifest = array(
         ),
     ),
     'user/subscriptions' => array(
-        'js' => array(
-            'footer' => array(
-                'user/dis.user.subscriptions.js',
-            )
-        ),
         'modules' => array(
             'sidebar' => array(
                 'tpl' => 'user-sidebar',
@@ -225,11 +187,6 @@ $manifest = array(
         ),
     ),
     'user/ignoreboards' => array(
-        'js' => array(
-            'footer' => array(
-                'user/dis.user.ignoreboards.js',
-            )
-        ),
         'modules' => array(
             'sidebar' => array(
                 'tpl' => 'user-sidebar',
@@ -304,11 +261,6 @@ $manifest = array(
         'options' => array(
             'pageTpl' => 'common/messages-with-form',
         ),
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            ),
-        ),
         'modules' => array(
             'sidebar' => array(
                 'tpl' => 'post-sidebar',
@@ -332,11 +284,6 @@ $manifest = array(
     'messages/reply' => array(
         'options' => array(
             'pageTpl' => 'common/messages-with-form',
-        ),
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            ),
         ),
         'modules' => array(
             'sidebar' => array(
@@ -362,11 +309,6 @@ $manifest = array(
         'options' => array(
             'pageTpl' => 'common/messages-with-form',
         ),
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            ),
-        ),
         'modules' => array(
             'sidebar' => array(
                 'tpl' => 'post-sidebar',
@@ -388,11 +330,6 @@ $manifest = array(
         ),
     ),
     'messages/view' => array(
-        'js' => array(
-            'footer' => array(
-                'dis.thread.js',
-            )
-        ),
         'options' => array(
             'showPosts' => true,
             'showViewing' => true,

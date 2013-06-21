@@ -42,40 +42,6 @@
         <style>@media print {header::before{content: url(http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=[[~[[*id]]:urlencode? &scheme=`full`]]&chld=H|0); }}</style>
 
 		<link rel="stylesheet" href="[[++modmore.assets]]css/combined.css">
-        <style type="text/css">
-            .forums-breadcrumbs {
-
-            }
-            .forums-breadcrumbs ul {
-                padding: 0;
-                margin: 0 !important;
-            }
-            .forums-breadcrumbs li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 0;
-                font-size: 80%;
-                color: #6f6f6f;
-            }
-            .forums-breadcrumbs li:after {
-                content: " /"
-            }
-            .forums-breadcrumbs li.last:after {
-                content: ""
-            }
-            #content img {
-                display: inline;
-            }
-            .forum-board h4 {
-                margin: 0 !important;
-            }
-            .forum-board p.meta {
-                font-size: 80%;
-                color: #6f6f6f;
-                margin-bottom: 0 !important;
-            }
-        </style>
-
 
 		<script src="[[++modmore.assets]]js/modernizr.js"></script>
 
