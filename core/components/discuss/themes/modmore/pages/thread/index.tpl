@@ -1,12 +1,14 @@
-<!-- thread/index.html -->
+<!-- thread/index -->
 [[+top]]
 
 [[+aboveThread]]
 
 <div class="forums-thread" id="thread-[[+id]]">
     <h1><a href="[[+url]]" title="[[+title]]">[[+title]]</a>
-        [[+answered:notempty=`<span class="label success">[Solved!]</span>`:default=``]]
+        [[+answered:notempty=`<span class="label success">Solved!</span>`:default=``]]
     </h1>
+
+    [[+trail]]
 
     [[+posts]]
 
