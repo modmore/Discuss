@@ -1,0 +1,78 @@
+.forums-breadcrumbs ul {
+  padding: 0;
+  margin: 0 !important; }
+  .forums-breadcrumbs ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 0;
+    font-size: 80%;
+    color: #6f6f6f; }
+    .forums-breadcrumbs ul li:after {
+      content: " /"; }
+    .forums-breadcrumbs ul li.last:after {
+      content: ""; }
+
+#content img {
+  display: inline; }
+
+.forum-board h4 {
+  margin: 0 !important; }
+
+.forum-board p.meta, .forum-threads p.meta {
+  font-size: 80%;
+  color: #6f6f6f;
+  margin-bottom: 0 !important; }
+
+.wysi-buttons {
+  margin: 0;
+  height: 36px;
+  background: #1f4a7f -webkit-gradient(linear, left top, left bottom, color-stop(0, #1d4475), color-stop(1, #2d5586));
+  background: #1f4a7f -webkit-linear-gradient(top, #1d4475 0, #2d5586 100%);
+  background: #1f4a7f -moz-linear-gradient(top, #1d4475 0, #2d5586 100%);
+  background: #1f4a7f -o-linear-gradient(top, #1d4475 0, #2d5586 100%);
+  background: #1f4a7f -ms-linear-gradient(top, #1d4475 0, #2d5586 100%);
+  background: #1f4a7f linear-gradient(top, #1d4475 0, #2d5586 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1d4475, endColorstr=#2d5586)"; }
+
+.toolbar-btns {
+  background-color: #666666;
+  border-radius: 3px 3px 0 0;
+  margin: 0 !important; }
+  .toolbar-btns a {
+    float: left;
+    height: 35px;
+    width: 37px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    background: url(../images/forums-bb-icons.png) no-repeat -35px -36px;
+    opacity: 0.8; }
+    .toolbar-btns a:hover {
+      opacity: 1; }
+    .toolbar-btns a:first-child {
+      border-left: none; }
+
+a.italics {
+  background-position: -397px -35px; }
+a.underline {
+  background-position: -335px -35px; }
+a.strikethrough {
+  background-position: -274px -36px; }
+a.insert-image {
+  background-position: -572px -34px; }
+a.url {
+  background-position: -453px -35px; }
+a.code {
+  background-position: -203px -36px; }
+a.pre {
+  background-position: -208px -36px; }
+a.insert-quote {
+  background-position: -512px -34px; }
+a.ul-list {
+  background-position: -93px -36px; }
+a.ol-list {
+  background-position: -151px -36px; }
+a.preview {
+  text-indent: 0;
+  background-image: none;
+  width: 100px; }
