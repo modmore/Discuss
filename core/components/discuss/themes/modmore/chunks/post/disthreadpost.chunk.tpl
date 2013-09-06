@@ -18,9 +18,9 @@
         </ul>
     </div>`]]
 
-    <div class="thread-post-actions">
+    [[+actions:notempty=`<div class="thread-post-actions">
         [[+actions]]
-    </div>
+    </div>`]]
 
     [[-<p class="text-right"><small>[[+action_reply]]</small></p>]]
 
