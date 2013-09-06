@@ -1,5 +1,30 @@
-<div id="dis-post-[[+id]]" class="modmore-post" data-author="[[+author.username:htmlent]]" data-date="[[+createdon_raw]]" data-message="[[+content_raw]]">
-    <p style="border-bottom: 1px solid #ccc;">
+<div id="dis-post-[[+id]]" class="thread-post">
+    <div class="thread-post-meta">
+        <span class="avatar">[[+author.avatar]]</span>
+        <span class="author">[[+author.username_link]]</span>
+        <span class="date">on [[+createdon:strtotime:date=`%B %e, %Y, %k:%M`]]</span>
+        <span class="idx">#[[+idx]]</span>
+    </div>
+
+    <div class="thread-post-content">
+        [[+content]]
+    </div>
+
+
+
+    [[+attachments:notempty=`<div class="thread-post-attachments">
+        <ul>
+            [[+attachments]]
+        </ul>
+    </div>`]]
+
+    <div class="thread-post-actions">
+        [[+actions]]
+    </div>
+
+    [[-<p class="text-right"><small>[[+action_reply]]</small></p>]]
+
+    [[-<p style="border-bottom: 1px solid #ccc;">
         <small>
             <a href="[[+url]]" title="Link to this Post">#[[+idx]]</a>
             &bull; Posted by [[+author.username_link]]
@@ -15,14 +40,7 @@
             </span>
         </small>
     </p>
-
-    [[-<div class="right">
+    <div class="right">
         [[+author.avatar]]
     </div>]]
-
-    [[+content]]
-
-    <p class="text-right"><small>[[+action_reply]]</small></p>
-
-    [[+attachments:notempty=`<div class="dis-post-attachments"><ul class="dis-attachments">[[+attachments]]</ul></div>`]]
 </div>
