@@ -77,11 +77,14 @@
                 [[+sidebar]]
 
                 <ul class="subnav">
-                    <li><a href="[[~[[*id]]]]">Forum Home</a></li>
-                    <li><a href="#">New Thread</a></li>
+                    <li><a href="[[~[[*id]]]]thread/new">New Question</a></li>
+                    <li class="forum-ticket-cta">
+                        <h3>Need more help?</h3>
+                        <p class="noMargin">Get same-day support for modmore Premium Extras by opening a Support Ticket, answered by the original developers.</p>
+                        <p class="noMargin"><a href="https://support.modmore.com/tickets/new">Open a Ticket &raquo;</a></p>
+                    </li>
                     <li><a href="[[~[[*id]]]]thread/recent">Recent Posts</a></li>
                     <li><a href="[[~[[*id]]]]search">Search the Forums</a></li>
-                    <li><a href="mailto:support@modmore.com">Email Support</a></li>
                 </ul>
             </div>
 
