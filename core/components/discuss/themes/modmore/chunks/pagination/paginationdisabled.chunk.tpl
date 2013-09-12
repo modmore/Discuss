@@ -1,1 +1,1 @@
-<li class="inactive">[[+text]]</li>
+<li class="unavailable"><a href="[[+url]]">[[+text]]</a></li>

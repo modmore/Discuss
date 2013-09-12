@@ -10,15 +10,30 @@
 
     [[+trail]]
 
+    [[+pagination:notempty=`
+    <div class="row">
+        <div class="small-12 columns">
+            [[+pagination]]
+        </div>
+    </div>`]]
+
     [[+posts]]
 
-    <hr />
 
-    [[+locked:notempty=`<p class="m-notice">
-        [[%discuss.thread_locked]]</p>
+    [[+pagination:notempty=`
+    <div class="row">
+        <div class="small-12 columns">
+            [[+pagination]]
+        </div>
+    </div>`]]
+
+    [[+locked:notempty=`
+        <div class="alert-box">This thread has been locked.</div>
     `:default=`
         <h3 id="reply">Leave a Reply</h3>
-        [[+quick_reply_form]]
+        [[+quick_reply_form:default=`
+            <div class="alert-box">Please login to leave a Reply.</div>
+        `]]
     `]]
 
     <hr />

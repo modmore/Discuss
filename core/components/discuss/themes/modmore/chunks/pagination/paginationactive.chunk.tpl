@@ -1,1 +1,1 @@
-<li class="active">[[+text]]</li>
+<li class="current"><a href="[[+url]]">[[+text]]</a></li>

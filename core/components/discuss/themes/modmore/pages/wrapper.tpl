@@ -92,8 +92,7 @@
                 [[+content]]
 
                 [[+threadactionbuttons:notempty=`
-                    <hr />
-                    <div class="forums-moderator-actions">[[+threadactionbuttons]]</div><!-- / moderator bar-->
+                    <div class="forums-moderator-actions">[[+threadactionbuttons]]</div>
                 `]]
             </div>
         </div>
