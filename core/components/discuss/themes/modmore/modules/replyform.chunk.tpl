@@ -10,75 +10,59 @@
     <input type="hidden" name="thread" value="[[!+fi.thread]]" />
     <input type="hidden" name="post"   value="[[!+fi.post]]" />
 
-    [[!+fi.is_root:is=`1`:then=`
-        <section class="group">
-            <div class="m-dis-thread-type-wrap">
-                <ul class="m-dis-thread-type horiz-list">
-                    <li class="m-dis-discussion" data-target=".m-dis-discussion-info">
-                        <label>
-                            <input type="radio" name="class_key" value="disThreadDiscussion" [[!+fi.class_key:eq=`disThreadDiscussion`:then=`checked="checked"`:else=``]] />
-                            [[%discuss.discussion]]
-                        </label>
-                    </li>
-                    <li class="m-dis-question" data-target=".m-dis-question-info">
-                        <label>
-                            <input type="radio" name="class_key" value="disThreadQuestion" [[!+fi.class_key:eq=`disThreadQuestion`:then=`checked="checked"`:else=``]] />
-                            [[%discuss.question]]
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="dis-thread-info">
-                <ul>
-                    <li class="m-dis-choose-info"><p>[[%discuss.new_post_type_instructions]] </p></li>
-                    <li class="m-dis-discussion-info" style="display: none;"><p>[[%discuss.discussion_instructions]]</p><p>[[%discuss.discussion_links]]</p></li>
-                    <li class="m-dis-question-info" style="display: none;"><p>[[%discuss.question_instructions]]</p><p>[[%discuss.question_links]]</p></li>
-                </ul>
-                <br class="clearfix" />
-            </div>
-        </section>
-        <div id="dis-new-thread-title-wrapper" class="dis-new-thread-title-wrapper">
-            <label for="dis-new-thread-title">[[%discuss.title]]:</label>
-            <span class="error">[[!+fi.error.title]]</span>
-        </div>
-        <input type="text" name="title" id="dis-new-thread-title" class="dis-new-thread-title" value="[[!+fi.title]]" />
-    `:else=`
-        <input type="hidden" name="title" value="[[!+fi.title]]" />
+    [[!+fi.error.message:notempty=`
+        <div class="alert-box alert">[[!+fi.error.message]]</div>
     `]]
-    <div id="dis-quick-reply-form">
-        <div class="wysi-buttons">[[+buttons]]</div>
-        <div class="h-group">
-            <textarea name="message" id="dis-thread-message">[[+message]]</textarea>
+
+
+    [[!+fi.is_root:is=`1`:then=`
+    <input type="hidden" name="class_key" value="disThreadDiscussion" />
+
+
+    <div class="row [[!+fi.error.title:notempty=`error`]]">
+        <div class="small-12 medium-3 large-3 columns">
+            <label for="thread-title">Title [[!+fi.error.title]]</label>
+        </div>
+        <div class="small-12 medium-9 large-9 columns">
+            <input type="text" name="title" id="thread-title" value="[[!+fi.title]]">
         </div>
     </div>
-    <div class="h-group below-wysi">
-        <div class="l-left">
-            <label for="dis-attachment">[[%discuss.attachments]]:
-                <span class="error">[[+error.attachments]]</span>
+    `:else=`
+    <input type="hidden" name="title" value="[[!+fi.title]]" />
+    <input type="hidden" name="class_key" value="disThreadDiscussion" />
+    `]]
+
+    <div class="wysi-buttons">[[+buttons]]</div>
+    <textarea name="message" id="dis-thread-message">[[+message]]</textarea>
+
+    <div class="row">
+        <div class="large-8 medium-8 small-12 columns">
+            <label>
+                <input type="checkbox" name="notify" value="1" tabindex="38" [[+subscribed]] />
+                Subscribe to email notifications
             </label>
-            <input type="file" class="dis-attachment-input" name="attachment[[+attachmentCurIdx]]" id="dis-attachment" />
+            [[+locked_cb]]
+            [[+sticky_cb]]
 
-            <div id="dis-attachments"></div>
-            [[+attachments:notempty=`
-                <div class="dis-existing-attachments">
-                    <ul class="dis-attachments">[[+attachments]]</ul>
-                </div>
-            `]]
 
-            <a href="javascript:void(0);" class="dis-add-attachment">[[%discuss.attachment_add]] <span>([[%discuss.attachments_max? &max=`[[+max_attachments]]`]])</span></a>
-        </div>
-
-        <div class="dis-form-buttons l-right">
-            <a class="cancel" onclick="location.href='[[+url]]';" />[[%discuss.cancel]]</a>
-            <input type="submit" name="dis-post-reply" value="[[%discuss.post_[[+action]]]]" />
-            <div class="group">
-                [[+locked_cb]]
-                [[+sticky_cb]]
-                <label class="dis-cb">
-                    <input type="checkbox" name="notify" value="1" checked="checked" />[[%discuss.subscribe_by_email]]
+            <div class="attachments">
+                <label for="dis-attachment">
+                    Add up to 5 Attachments
                 </label>
+                <div id="dis-attachments">
+                    <input type="file" class="dis-attachment-input" name="attachment[[+attachmentCurIdx]]" id="dis-attachment" />
+                </div>
+                <a href="javascript:void(0);" class="dis-add-attachment">Add one more</a>
+
+               [[+attachments:notempty=`
+                    <ul class="dis-attachments">[[+attachments]]</ul>
+                `]]
             </div>
         </div>
+
+
+        <div class="text-right large-4 medium-4 small-12 columns">
+            <input class="small button" type="submit" name="dis-post-reply" value="[[%discuss.post_[[+action]]]]" />
+        </div>
     </div>
-    [[+discuss.error_panel]]
 </form>

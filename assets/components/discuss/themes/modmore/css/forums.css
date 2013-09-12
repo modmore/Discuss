@@ -149,3 +149,6 @@ blockquote {
 .dis-code {
   overflow-x: scroll;
   overflow-y: hidden; }
+
+form .attachments {
+  padding-top: 15px; }
