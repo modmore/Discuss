@@ -41,7 +41,7 @@
 		<!-- QR-Code on printed pages with link of current page -->
         <style>@media print {header::before{content: url(http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=[[~[[*id]]:urlencode? &scheme=`full`]]&chld=H|0); }}</style>
 
-		<link rel="stylesheet" href="[[++modmore.assets]]css/combined.css">
+		<link rel="stylesheet" href="[[++modmore.assets]]tpl/css/combined.20130913.css">
 
 		<script src="[[++modmore.assets]]js/modernizr.js"></script>
 
@@ -59,7 +59,7 @@
 
     <div id="fb-root"></div>
 
-    <header [[*hasSlider:isnot=`1`:then=` class="blueending"`]]>
+    <header class="siteheader">
         <div class="row">
             <h1 class="large-3 medium-12 columns"><a href="[[~[[++site_start]]]]" id="logo">mod<strong>more</strong></a></h1>
 
