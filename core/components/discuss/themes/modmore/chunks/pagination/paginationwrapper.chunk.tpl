@@ -1,3 +1,5 @@
-<ul class="pagination right">
-    [[+content]]
-</ul>
+<div class="pagination-centered">
+    <ul class="pagination">
+        [[+content]]
+    </ul>
+</div>
