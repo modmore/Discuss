@@ -135,6 +135,10 @@ blockquote {
       color: #cdcdcd;
       font-weight: bold;
       padding: 0 10px 0 0; }
+      .thread-post .thread-post-meta .idx a {
+        color: inherit; }
+        .thread-post .thread-post-meta .idx a:hover {
+          color: #9a9a9a; }
   .thread-post .thread-post-content {
     padding: 20px 15px; }
   .thread-post .thread-post-actions {

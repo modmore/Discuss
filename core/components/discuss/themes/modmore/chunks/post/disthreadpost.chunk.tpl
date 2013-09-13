@@ -3,7 +3,7 @@
         <span class="avatar">[[+author.avatar]]</span>
         <span class="author">[[+author.username_link]]</span>
         <span class="date">on [[+createdon:strtotime:date=`%B %e, %Y, %k:%M`]]</span>
-        <span class="idx">#[[+idx]]</span>
+        <span class="idx"><a href="[[+url]]">#[[+idx]]</a></span>
     </div>
 
     <div class="thread-post-content">

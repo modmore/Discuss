@@ -32,7 +32,7 @@
     `:default=`
         <h3 id="reply">Leave a Reply</h3>
         [[+quick_reply_form:default=`
-            <div class="alert-box">Please login to leave a Reply.</div>
+            <div class="alert-box">Please <a href="[[~[[++discuss.login_resource_id]]]]">login</a> to leave a Reply.</div>
         `]]
     `]]
 
