@@ -91,9 +91,6 @@
 </form>
 
 </div>
-	
 
-[[+sidebar]]
-</div><!-- Close Content From Wrapper -->
-	[[+bottom]]
+[[+bottom]]
 

@@ -22,5 +22,4 @@
         [[+pagination:notempty=`<nav class="paginate stand-alone bottom horiz-list">[[+pagination]]</nav>`]]
     </div>
 </div>
-[[+sidebar]]
 [[+bottom]]

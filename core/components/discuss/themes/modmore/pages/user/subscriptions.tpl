@@ -18,13 +18,9 @@
 			<li>Remove All: <strong><input type="checkbox" /></strong></li>
 		</ul>
 	    <div class="dis-form-buttons">
-	    	<input type="submit" class="dis-action-btn" value="[[%discuss.unsubscribe]]" />
+	    	<input type="submit" class="button" value="[[%discuss.unsubscribe]]" />
 		</div>
     </form>
-
-
-</div>
-[[+sidebar]]
 [[+bottom]]
 
 

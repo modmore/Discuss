@@ -14,15 +14,12 @@
 		<br class="clearfix" />
 
 	    <div class="dis-form-buttons">
-	    	<input type="submit" name="submit" value="Update" />
+	    	<input type="submit" name="submit" value="Update" class="button" />
 	    </div>
 
 	</form>
 	
 </div>
-[[+sidebar]]
-
-</div><!-- Close Content From Wrapper -->
-	[[+bottom]]
+[[+bottom]]
 
 

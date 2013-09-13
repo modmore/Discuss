@@ -10,5 +10,4 @@
         <li>[[%discuss.location]]: <strong>[[+location]]</strong></li>
     </ul>
 </div>
-[[+sidebar]]
 [[+bottom]]
