@@ -7,10 +7,8 @@
         <p>[[+message]]</p>
     </div>
 	
-	
-	<footer>
-		<p>[[%discuss.posted_on]] <strong>[[+createdon]]</strong> [[%discuss.by]] <strong>[[+username]]</strong></p>
-	</footer>
+
+	<p><small>[[%discuss.posted_on]] <strong>[[+createdon]]</strong> [[%discuss.by]] <strong>[[+username]]</strong></small></p>
 	
 </div>
 
