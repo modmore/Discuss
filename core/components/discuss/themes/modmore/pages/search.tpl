@@ -105,19 +105,12 @@
 
 
 [[+total:gte=`1`:then=`
-    <header class="dis-cat-header dark-gradient h-group sticky-bar top">
-        [[+results:notempty=`<h1>Displaying [[+start]]-[[+end]] of [[+total]] Results</h1>`]]
-        [[+pagination]]
-    </header>
+	
+	[[+results:notempty=`<h2>Results [[+start]] – [[+end]] of [[+total]]</h2>`]]
+	
+	
+	[[+results]]
 
-    <div class="dis-threads">
-        <ul class="dis-list search-results">
-            [[+results]]
-        </ul>
-    </div>
-    <div class="paginate stand-alone bottom horiz-list">
-    [[+pagination]]
-    </div>
 `:else=`
     [[+results]]
 `]]
