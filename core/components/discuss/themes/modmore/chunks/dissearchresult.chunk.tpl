@@ -1,3 +1,21 @@
+<div id="dis-post-[[+id]]" class="thread-post [[+class]]">
+    <div class="thread-post-meta">
+        <a href="[[+url]]" class="title">[[+title]]</a>
+    </div>
+
+    <div class="thread-post-content">
+        <p>[[+message]]</p>
+    </div>
+	
+	
+	<footer>
+		<p>[[%discuss.posted_on]] <strong>[[+createdon]]</strong> [[%discuss.by]] <strong>[[+username]]</strong></p>
+	</footer>
+	
+</div>
+
+
+[[-
 <li class="Item Depth2 dis-category-1 [[+class]]">
 	<a href="[[+url]]">
     <div class="ItemContent Category">
@@ -9,3 +27,4 @@
     </div>
 	</a>
 </li>
+]]
