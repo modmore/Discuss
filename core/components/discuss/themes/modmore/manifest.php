@@ -262,12 +262,6 @@ $manifest = array(
             'pageTpl' => 'common/messages-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'message-form',
                 'options' => array(
@@ -286,12 +280,6 @@ $manifest = array(
             'pageTpl' => 'common/messages-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'message-form',
                 'options' => array(
@@ -310,12 +298,6 @@ $manifest = array(
             'pageTpl' => 'common/messages-with-form',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'form' => array(
                 'tpl' => 'message-form',
                 'options' => array(
@@ -340,12 +322,6 @@ $manifest = array(
             'showTitleInBreadcrumbs' => false,
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            )
         ),
     ),
     'thread/recent' => array(
@@ -357,19 +333,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-table',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
-            'navbar_extra' => array(
-                'tpl' => 'navbar_extra-wrapper',
-                'options' => array(
-                    'content' => '<a href="[[~[[++discuss.forums_resource_id]]]]thread/unread_last_visit" class="action-buttons dis-action-unread_last_visit" title="[[%discuss.unread_posts_last_visit]]">[[%discuss.unread_posts_last_visit]]</a>
-                        <a class="read" href="[[+actionlink_mark_read]]" title="[[%discuss.mark_all_as_read]]">[[%discuss.mark_all_as_read]]</a>'
-                )
-            )
         ),
     ),
     'thread/unread_last_visit' => array(
@@ -377,12 +340,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-table',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
             'navbar_extra' => array(
                 'tpl' => 'navbar_extra-wrapper',
                 'options' => array(
@@ -397,12 +354,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-table',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            )
         ),
     ),
     'thread/unanswered_questions' => array(
@@ -410,12 +361,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-table',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            )
         ),
     ),
     'thread/new_replies_to_posts' => array(
@@ -423,18 +368,6 @@ $manifest = array(
             'pageTpl' => 'common/thread-table',
         ),
         'modules' => array(
-            'sidebar' => array(
-                'tpl' => 'post-sidebar',
-                'options' => array(
-                    'show_be_nice_box' => '1',
-                )
-            ),
-            'navbar_extra' => array(
-                'tpl' => 'navbar_extra-wrapper',
-                'options' => array(
-                    'content' => '<a class="action-buttons" href="[[+actionlink_mark_read]]" title="[[%discuss.mark_all_as_read]]">[[%discuss.mark_all_as_read]]</a>'
-                )
-            )
         ),
     ),
 );

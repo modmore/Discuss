@@ -1,12 +1,8 @@
 <h1>[[+discuss.pagetitle]]</h1>
-[[+navigation:notempty=`<nav class="forum-pagination">[[+pagination]]</nav>`]]
-
-<div class="row">
-    <div class="large-2 columns">Board</div>
-    <div class="large-5 columns">Thread</div>
-    <div class="large-3 columns">Posted</div>
-    <div class="large-2 columns"># Replies</div>
+[[+trail]]
+[[+pagination:notempty=`<nav class="forum-pagination">[[+pagination]]</nav>`]]
+<div class="forum-thread">
+    [[+threads]]
 </div>
-
-[[+threads]]
-[[+navigation:notempty=`<nav class="forum-pagination">[[+pagination]]</nav>`]]
+[[+pagination:notempty=`<nav class="forum-pagination">[[+pagination]]</nav>`]]
+[[+bottom]]
