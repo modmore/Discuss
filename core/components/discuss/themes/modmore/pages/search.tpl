@@ -7,7 +7,8 @@
 	
 	<div class="row">
 		<div class="small-12 columns">
-	        <input class="search" type="text" id="dis-search" name="s" value="[[+search]]" placeholder="Search keyphrase..." />	
+			<label for="dis-search">Enter Search Keyphrase:</label>
+	        <input class="search" type="text" id="dis-search" name="s" value="[[+search]]" placeholder="..." />	
 		</div>
 	</div>
 	
@@ -28,18 +29,18 @@
 		<div class="row">
 			<div class="large-6 medium-6 small-12 columns">
 				<label for="dis-date-start">[[%discuss.date_start]]:</label>
-                <input type="text" id="dis-date-start" class="m-datepicker" name="date_start" value="[[+date_start]]"/>
+                <input type="datetime-local" id="dis-date-start" class="m-datepicker" name="date_start" value="[[+date_start]]"/>
 			</div>
 			
 			<div class="large-6 medium-6 small-12 columns">
 				<label for="dis-date-end">[[%discuss.date_end]]:</label>
-                <input type="text" id="dis-date-end" class="m-datepicker" name="date_end" value="[[+date_end]]"/>
+                <input type="datetime-local" id="dis-date-end" class="m-datepicker" name="date_end" value="[[+date_end]]"/>
 			</div>
 		</div>
 		
 	</fieldset>
 	
-	<p class="text-center"><input class="button" type="submit" value="[[%discuss.search]]" /></p>
+	<p class="text-right"><input class="button medium" type="submit" value="[[%discuss.search]]" /></p>
 
 
 
