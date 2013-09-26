@@ -129,6 +129,8 @@ blockquote {
       height: 50px; }
     .thread-post .thread-post-meta .author {
       padding: 0 7px 0 15px; }
+    .thread-post .thread-post-meta .title {
+      padding: 0 7px 0 15px; }
     .thread-post .thread-post-meta .idx {
       float: right;
       font-size: 200%;
@@ -140,7 +142,8 @@ blockquote {
         .thread-post .thread-post-meta .idx a:hover {
           color: #9a9a9a; }
   .thread-post .thread-post-content {
-    padding: 20px 15px; }
+    padding: 20px 15px;
+    line-height: 1.6;}
   .thread-post .thread-post-actions {
     float: right;
     padding: 10px;
