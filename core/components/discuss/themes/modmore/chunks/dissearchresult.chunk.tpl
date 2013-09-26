@@ -6,7 +6,7 @@
     <div class="thread-post-content">
         <p>[[+message]]</p>
         
-        <small>[[%discuss.posted_on]] <strong>[[+createdon]]</strong> [[%discuss.by]] <strong>[[+username]]</strong></small>
+        <small>Posted by <b>[[+createdon:strtotime:date=`%B %d, %Y, %H:%M`]]</b> by <strong>[[+username]]</strong>.</small>
     </div>
 	
 </div>
