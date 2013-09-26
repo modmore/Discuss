@@ -77,6 +77,7 @@
                 [[+sidebar]]
 
                 <ul class="subnav">
+                	<li><a href="[[~[[*id]]]]">Forum Home</a></li>
                     <li><a href="[[~[[*id]]]]thread/new">New Question</a></li>
                     <li class="forum-ticket-cta">
                         <h3>Need more help?</h3>

@@ -104,7 +104,8 @@ blockquote {
   margin-top: 60px; }
   #content ul.subnav li.forum-ticket-cta {
     text-align: right;
-    padding-right: 15px; }
+    padding-right: 15px;
+    padding-bottom: 10px; }
     #content ul.subnav li.forum-ticket-cta a {
       padding-right: 0; }
 
