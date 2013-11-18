@@ -1,11 +1,12 @@
-<li class="Item Depth2 dis-category-1 [[+class]]">
-	<a href="[[+url]]">
-    <div class="ItemContent Category">
-    	<h3 class="Title">[[+title:solrdecode]]</h3>
-    	<div class="dis-item-info">[[%discuss.posted_on]] <strong>[[+createdon]]</strong> [[%discuss.by]] <strong>[[+username]]</strong></div>
-    	<div class="CategoryDescription">
-    		<p>[[+message]]</p>
-    	</div>
+<div id="dis-post-[[+id]]" class="thread-post [[+class]]">
+    <div class="thread-post-meta">
+        <a href="[[+url]]" class="title">[[+title]]</a>
     </div>
-	</a>
-</li>
+
+    <div class="thread-post-content">
+        <p>[[+message]]</p>
+        
+        <small>Posted on <b>[[+createdon:strtotime:date=`%B %d, %Y, %H:%M`]]</b> by <strong>[[+username]]</strong>.</small>
+    </div>
+	
+</div>
